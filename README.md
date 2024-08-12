@@ -7,5 +7,7 @@
 
 ![Електрична схема](electrical-scheme.png)
 
+![Схема контролера](MicrocontrolerESP32.png)
+
 
 
