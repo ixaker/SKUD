@@ -9,7 +9,7 @@
 
 ![Електрична схема](SCUD-schema2.png)
 
-![Електрична схема -2](SCUD - schema2.png)
+![Електрична схема -2](SCUD-schema2.png)
 
 ![Схема контролера](MicrocontrolerESP32.png)
 
