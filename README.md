@@ -7,7 +7,9 @@
 
 Схеми в Figma - [посилання на проєкт](https://www.figma.com/design/Nd7bc0mb1TpfXyIu8w56VJ/SCUD?m=auto&t=jNlbcrbCwGCF1aqI-6)
 
-![Електрична схема](electrical-scheme.png)
+![Електрична схема](SCUD - schema.png)
+
+![Електрична схема -2](SCUD - schema2.png)
 
 ![Схема контролера](MicrocontrolerESP32.png)
 
