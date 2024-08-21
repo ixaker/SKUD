@@ -1,0 +1,41 @@
+Home page Tasmota
+https://tasmota.github.io/
+
+Web Installer
+https://tasmota.github.io/install/
+
+Release binaries for Tasmota firmware
+http://sidweb.nl/tasmota32/release-14.1.0/
+
+Backlog Topic SKUD; Hostname SKUD; DeviceName SKUD; SetOption36 0; Rule1 1; Rule2 1; PowerOnState 0;
+Backlog SwitchMode1 1; SwitchMode2 1; SwitchMode3 1; SwitchMode4 1; SwitchMode5 1; SwitchMode6 1; SwitchMode7 1; SwitchMode8 1; SwitchMode9 1; SwitchMode10 1; SwitchMode11 1; SwitchTopic SKUD_SENSOR; SetOption114 1;
+Backlog SSID1 qpart; Password1 qpart222; SSID2 WiFi-DZPV6; Password2 fkmnhebcn
+Backlog MqttHost 185.65.247.248; MqttUser xaker; MqttPassword xaker; Topic SKUD
+Backlog Template {"NAME":"SKUD","GPIO":[1,163,288,162,256,260,1,1,0,166,167,1,1,0,262,165,0,164,161,160,0,257,259,258,0,0,0,0,261,263,1,1,1,0,0,1],"FLAG":0,"BASE":1}; Module 0;
+
+Rule1 
+ON Switch8#Action=OFF DO backlog POWER7 1; RuleTimer2 15 ENDON 
+ON Switch1#Action=OFF DO backlog POWER7 1; RuleTimer2 15 ENDON
+ON Rules#Timer=2 DO POWER7 0 ENDON 
+ON Switch4#Action=ON DO backlog RuleTimer2 0; POWER7 0; POWER3 1 ENDON 
+ON Switch3#Action=ON DO backlog RuleTimer2 0; POWER7 0 ENDON
+ON Power3#State=1 DO backlog RuleTimer3 1; POWER7 0 ENDON
+ON Rules#Timer=3 DO POWER3 0 ENDON
+
+Rule2 
+ON Switch7#Action=OFF DO backlog POWER5 1; RuleTimer4 15 ENDON 
+ON Switch2#Action=OFF DO backlog POWER5 1; RuleTimer4 15 ENDON
+ON Rules#Timer=4 DO POWER5 0 ENDON 
+ON Switch6#Action=ON DO backlog RuleTimer4 0; POWER5 0; POWER1 1 ENDON 
+ON Switch5#Action=ON DO backlog RuleTimer4 0; POWER5 0 ENDON
+ON Power1#State=1 DO backlog RuleTimer5 1; POWER5 0 ENDON
+ON Rules#Timer=5 DO POWER1 0 ENDON
+
+
+
+Backlog Rule1 1; Rule2 1;
+
+
+
+
+
